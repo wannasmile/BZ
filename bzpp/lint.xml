@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lint>
+    <issue id="ClickableViewAccessibility">
+        <ignore path="src/com/xsbz/IndexActivity.java" />
+    </issue>
+    <issue id="SimpleDateFormat">
+        <ignore path="src/MyBZ/Libs.java" />
+        <ignore path="src/com/xsbz/PaiPanActivity.java" />
+        <ignore path="src/com/xsbz/ShowActivity.java" />
+        <ignore path="src/dataCalc/Libs.java" />
+        <ignore path="src/dataCalc/PaiPan.java" />
+        <ignore path="src/dataCalc/SolarMode.java" />
+    </issue>
+</lint>

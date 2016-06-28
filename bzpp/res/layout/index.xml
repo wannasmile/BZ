@@ -1,0 +1,185 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <include layout="@layout/title" />
+
+        <TableLayout
+            android:id="@+id/tlIndex"
+            android:layout_width="fill_parent"
+            android:layout_height="420dp"
+            android:stretchColumns="0,1,2"
+            tools:context=".IndexActivity" >
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:id="@+id/tName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_gravity="end"
+                    android:gravity="center_vertical"
+                    android:text="@string/index_name" />
+
+                <EditText
+                    android:id="@+id/etName"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/index_name" />
+
+                <RadioGroup
+                    android:id="@+id/rgGender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/rbMen"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:text="@string/index_man" />
+
+                    <RadioButton
+                        android:id="@+id/rbWomen"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/index_women" />
+                </RadioGroup>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:id="@+id/tYear"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_gravity="end"
+                    android:gravity="center_vertical"
+                    android:text="@string/index_year" />
+
+                <Spinner
+                    android:id="@+id/sYear"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" />
+
+                <RadioGroup
+                    android:id="@+id/rgYear"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/rbSolar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:text="@string/index_solar" />
+
+                    <RadioButton
+                        android:id="@+id/rbLunar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/index_lunar" />
+                </RadioGroup>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:id="@+id/tMonth"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_gravity="end"
+                    android:gravity="center_vertical"
+                    android:text="@string/index_month" />
+
+                <Spinner
+                    android:id="@+id/sMonth"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:id="@+id/tDay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_gravity="end"
+                    android:gravity="center_vertical"
+                    android:text="@string/index_day" />
+
+                <Spinner
+                    android:id="@+id/sDay"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:id="@+id/tHour"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_gravity="end"
+                    android:gravity="center_vertical"
+                    android:text="@string/index_hour" />
+
+                <Spinner
+                    android:id="@+id/sHour"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:id="@+id/tMinute"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_gravity="end"
+                    android:gravity="center_vertical"
+                    android:text="@string/index_minute" />
+
+                <Spinner
+                    android:id="@+id/sMinute"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" />
+
+                <Button
+                    android:id="@+id/bConfirm"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/index_confirm" />
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+
+    <include layout="@layout/imenu" />
+
+</RelativeLayout>
