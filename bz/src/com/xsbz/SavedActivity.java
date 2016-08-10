@@ -17,7 +17,6 @@ import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.view.KeyEvent;
 import android.view.View;
-import android.view.Window;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.AdapterView.OnItemLongClickListener;
@@ -74,15 +73,16 @@ public class SavedActivity extends Activity {
 				String sql = "select name,gender,bir_date from saved where id=" + ID + "";
 				dbHelper = new MyDataBase(SavedActivity.this, "bzdb.db", null, 1);
 				db = dbHelper.getReadableDatabase();
+				Cursor cursor=db.rawQuery(sql, null);
 				String date = null;
 				String gender = null;
 				String name = null;
-				if (db.rawQuery(sql, null).moveToNext()) {
-					date = db.rawQuery(sql, null).getString(2).toString();
-					name = db.rawQuery(sql, null).getString(0).toString();
-					gender = db.rawQuery(sql, null).getString(1).toString();
+				if (cursor.moveToFirst()) {
+					date = cursor.getString(2).toString();
+					name = cursor.getString(0).toString();
+					gender = cursor.getString(1).toString();
 				}
-
+				cursor.close();
 				Intent intent = new Intent(SavedActivity.this, PaiPanActivity.class);
 				intent.putExtra("name", name);
 				intent.putExtra("gender", Integer.parseInt(gender));
