@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">八字</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    
+    <string name="index_name">姓名</string>
+    <string name="index_year">生年</string>
+    <string name="index_month">生月</string>
+    <string name="index_day">生日</string>
+    <string name="index_hour">生时</string>
+    <string name="index_minute">生分</string>
+    <string name="index_man">男</string>
+    <string name="index_women">女</string>
+    <string name="index_solar">阳历</string>
+    <string name="index_lunar">阴历</string>
+    <string name="index_confirm">确定</string>
+    
+    <string name="menu_save">保存</string>
+    <string name="menu_history">历史</string>
+    <string name="menu_exit">退出</string>
+
+</resources>

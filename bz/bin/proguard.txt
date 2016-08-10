@@ -1,0 +1,18 @@
+# view AndroidManifest.xml #generated:16
+-keep class com.xsbz.IndexActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:25
+-keep class com.xsbz.PaiPanActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:27
+-keep class com.xsbz.SavedActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:29
+-keep class com.xsbz.TestMenu { <init>(...); }
+
+# view res/layout/imenu.xml #generated:7
+-keep class com.xsbz.views.ArcMenu { <init>(...); }
+
+# view AndroidManifest.xml #generated:30
+-keep class com.xsbz.views.History { <init>(...); }
+
